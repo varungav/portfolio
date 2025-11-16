@@ -1,7 +1,15 @@
+import { useState } from 'react'
+import './App.css'
+import Header from './components/Header'
+import Hero from './components/Hero'
+
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className="min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-center py-8">My Portfolio</h1>
+    <div className=''>
+      <Header />
+      <Hero />
     </div>
   )
 }
